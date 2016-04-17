@@ -9,6 +9,7 @@ module.exports = {
 
     get: function(req, res, next){
         persistence.get_configuration(function(err, configuration){
+            res.stash.code = 200;
             res.stash.body = configuration.records;
             return next();
         });
