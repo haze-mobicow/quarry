@@ -27,7 +27,11 @@ module.exports = {
         metavar: "INTERFACE",
         default: "0.0.0.0"
     },
-
+    "api-auth": {
+        help: "Basic Auth for API (user:password) format.",
+        metavar: "AUTH",
+        required: false
+    },
     "api-port": {
         help: "Port to listen on for API requests",
         metavar: "PORT",
